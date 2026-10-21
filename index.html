@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <nav class ="navbar">
+           <a href = "#beranda" class="logo">Yohanes</a>
+           <ul class = "menu">
+                <li><a href = "#beranda">Beranda</a></li>
+                <li><a href = "#tentang">Tentang</a></li>
+                <li><a href = "#proyek">Proyek</a></li>
+                <li><a href = "#kontak">Kontak</a></li>
+                <li><button id="tombol-tema" class="tombol-tema">Tema</button></li>
+           </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id= "beranda" class = "hero">
+            <img src="/images/foto1.jpeg" alt="FotoProfil" class="foto-bulat">
+            <h1>Yohanes Tambunan</h1>
+            <p>Sedang menempuh pendidikan di Universitas Riau</p>
+            <a href = "#proyek" class = "tombol">Lihat proyek</a>
+        </section>
+
+        <section id="tentang" class="tentang">
+            <h2>About me</h2>
+            <div class="tentang-isi">
+                <img src="images/foto2.jpg" alt="Fototeknik" class="foto-kotak">
+                <div class="tentang-teks">
+                    <p>
+                        Saya adalah mahasiswa aktif di universitas Riau. Saat ini saya ingin berbagi pengalamana
+                        kepada orang-orang tentang kemampuan yang sudah saya miliki yang saya dapatkan dari pembelajaran kuliah saya
+                        di universitas Riau
+                    </p>
+                    <p id="teks-tambahan" class="sembunyi">
+                        "Kesuksesan itu bukan milik orang pintar, tetapi kesuksesan milik orang yang selalu berusaha." -BJ. Habibie
+                    </p>
+                    <button id="tombol-selengkapnya" class="tombol">Selengkapnya</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id = "proyek" class="proyek">
+            <h2>Proyek Saya</h2>
+            <div class="proyek grid">
+                <article class="kartu">
+                    <img src="images/projek1.jpeg" alt="keterampilan1">
+                    <h3>Keterampilan 1</h3>
+                    <p>Saya mampu menggunakan Bahasa CSS dengan baik karena saya sudah mempelajarinya semasa saya SMA hingga sekarang</p>
+                </article>
+
+                <article class ="kartu">
+                    <img src="images/projek2.jpeg" alt="keterampilan2">
+                    <h3>Keterampilan 2</h3>
+                    <p>Saya mampu menggunakan HTML dengan baik karena saya sudah mempelajarinya saat saya Kuliah</p>
+                </article>
+
+                <article class="kartu">
+                    <img src ="images/projek3.jpeg" alt="keterampilan3"
+                    <h3>Keterampilan 3</h3>
+                    <p>Saya Mampu menggunakan JavaScript dengan baik </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="kontak" class="kontak">
+            <h2>Kontak</h2>
+            <div class ="kontak-isi">
+
+                <form id="form kontak">
+                    <label for="nama">Nama</label>
+                    <input type ="text" id="nama" placeholder="Nama lengkap" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email@contoh.com" required>
+
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" rows ="S" placeholder="Tulis pesan" required></textarea> 
+                    
+                    <button type="submit" class ="tombol">Kirim</button>
+                    <p id="pesan-terima-kasih"></p>
+                </form>
+
+                <div class ="kontak=info">
+                    <p>Jika ada yang ingin memakai jasa saya silakan hubungin email saya dibawah ini</p>
+                    <p>email: yohanestambunan45@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Yohanes | Github</p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>

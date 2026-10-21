@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: antiquewhite;
+    color:darkslateblue;
+    line-height: 1.6;
+}
+
+section{
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2{
+    margin-bottom: 24px;
+    color:blue;
+
+}
+
+a {
+    margin-bottom: 24px;
+    color:blue;
+
+}
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 30px;
+        background-color:antiquewhite;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .logo{
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .menu{
+        display: flex;
+        gap:20px;
+        list-style: none;
+        align-items: center;
+    }
+
+    .menu a{
+        text-decoration: none;
+        color:black;
+
+    }
+
+    .menu a:hover {
+        color:blue;
+    }
+
+    .tombol-tema {
+        padding: 6px 14px;
+        border: 2px solid blue;
+        background-color: transparent;
+        color:blue;
+        border-radius: 6px;
+        cursor:pointer;
+    }
+    
+    .tombol-tema:hover{
+        background-color: blue;
+        color:antiquewhite;
+    }
+
+    .tombol {
+        display: inline-block;
+        padding: 10px 24px;
+        background-color: blue;
+        color:antiquewhite;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        text-decoration: none;
+        cursor:pointer;
+        transition: transform 0.7s;
+    }   
+
+    .tombol:hover {
+        transform: translateY(-3px)
+    }
+
+    .hero {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .foto-bulat {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .tentang-isi{
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+    }
+    
+    .foto-kotak {
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    .tentang-teks{
+        flex: 1;
+    }
+
+    .tentang-teks p{
+        margin-bottom: 14px;
+    }
+
+    .sembunyi{
+        display:none;
+    }
+
+    .proyek-gird {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .kartu {
+        background-color: antiquewhite;
+        padding: 14px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1);
+        transition: transform 0.7s;
+    }
+
+    .kartu{
+        background-color: antiquewhite;
+        padding: 14px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgb(0, 0, 0, 0.1);
+        transition: transform 0.7s;
+
+    }
+    
+    .kartu:hover {
+        transform: translateY(-6px);
+    }
+
+    .kartu img{
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .kartu h3{
+        margin-bottom: 6px;
+    }
+    .kontak-isi{
+        display: flex;
+        gap: 40px;
+    }
+
+    #form-kontak {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+    }
+    .kontak-info{
+        flex:1
+    }
+
+    .kontak-info p{
+        margin-bottom: 12px;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        border: 1px solid whitesmoke;
+        border-radius: 6px;
+        font-size: 16px;
+        font-family: inherit;
+        background-color: antiquewhite;
+        color:blue;
+    }
+
+    #form-kontak .tombol{
+        align-self: flex-start;
+        margin-top: 8px;
+
+    }
+
+    #pesan-terima-kasih {
+        color:blue;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: antiquewhite;
+
+    }
+
+    body.dark {
+        background-color: black;
+        color:white;
+    }
+
+    body.dark h2,
+    body.dark a,
+    body.dark #pesan-terima-kasih {
+        color:blue;
+    }
+
+    body.dark .navbar
+    body.dark footer,
+    body.dark .kartu{
+        background-color: black;
+    }
+
+    body.dark .menu a {
+        color:aliceblue;
+    }
+
+    body.dark .menu a:hover{
+        color:blue;
+    }
+
+    body.dark .tombol {
+        background-color: blue;
+    }
+
+    body.dark .tombol-tema {
+        border-color: blue;
+        color:blue
+
+    }
+
+    body.dark .tombol-tema:hover {
+        background-color: blue;
+        color:black;
+
+    }
+
+    body.dark input,
+    body.dark textarea {
+        background-color: black;
+        color:aliceblue;
+    }
+
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            gap: 10px;
+        }
+        .menu {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .tentang-isi,
+        .kontak-isi {
+            flex-direction: column;
+        }
+
+        .foto-kotak {
+            width: 100%;
+        
+        }
+        .proyek-gird {
+            grid-template-columns: 1fr;
+        }
+    }
+    
